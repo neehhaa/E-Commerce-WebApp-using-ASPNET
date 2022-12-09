@@ -1,10 +1,12 @@
 using etickets.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<AppDbContext>();
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(System.Configuration.GetCo));
 
 var app = builder.Build();
 

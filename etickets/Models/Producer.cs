@@ -9,5 +9,9 @@ namespace etickets.Models
         public string ProfilePictureURL { get; set; }
         public string FullName { get; set; }
         public string Bio { get; set; }
+
+        //Relationship
+
+        public List<Movie> Movies { get; set;}
     }
 }
