@@ -6,7 +6,7 @@ namespace etickets.Models
     {
         [Key]
         public int Id { get; set; }
-        public int Logo { get; }
+        public string Logo { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
 

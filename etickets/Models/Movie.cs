@@ -1,7 +1,6 @@
 ﻿using etickets.Data.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
 namespace etickets.Models
 {
     public class Movie
@@ -15,6 +14,9 @@ namespace etickets.Models
         public  DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public MovieCategory MovieCategory { get; set; }
+
+        //relations
+        public List<Actor_Movie> Actors_Movies { get; set; }
 
         //Cinema
 
